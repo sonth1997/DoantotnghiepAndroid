@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "164800843005",
+    "firebase_url": "https://readbook-dedb3.firebaseio.com",
+    "project_id": "readbook-dedb3",
+    "storage_bucket": "readbook-dedb3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164800843005:android:8699581a0b9dc349778294",
+        "android_client_info": {
+          "package_name": "com.example.doantotnghiepandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164800843005-hvfncgelc4jkedc62g603lm9ge48a58d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.doantotnghiepandroid",
+            "certificate_hash": "6e37691b6a6ea020e00386bd467e382e2fde604a"
+          }
+        },
+        {
+          "client_id": "164800843005-bh9df3h37p5k1qj9d8kve51e8ph60lfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2emPdr3u33tzQYWLlJbu_0_MpEf7wI1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164800843005-bh9df3h37p5k1qj9d8kve51e8ph60lfk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

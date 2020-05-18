@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/primary_background"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".category.CategoryFragment">
+
+    <Button
+        android:id="@+id/btnTruyenCuoi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Truyện Cười"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/bg_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnNguNgon"
+        app:layout_constraintTop_toBottomOf="@+id/btnSinhTon" />
+
+    <Button
+        android:id="@+id/btnMeoVat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_button"
+        android:text="Mẹo Vặt"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSinhTon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSucKhoe" />
+
+    <Button
+        android:id="@+id/btnTinhBan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Tình Bạn"
+        android:background="@drawable/bg_button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTinhYeu"
+        app:layout_constraintTop_toBottomOf="@+id/btnTinhTam" />
+
+    <Button
+        android:id="@+id/btnTinhTam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Tịnh Tâm"
+        android:background="@drawable/bg_button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTanMan"
+        app:layout_constraintTop_toBottomOf="@+id/btnCuocSong" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="24dp"
+            android:text="Thể Loại"
+            android:textColor="@color/color_text"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgMenu"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnKiNangSong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_button"
+        android:text="Kỹ Năng Sống"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@+id/btnKiNangMem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnKiNangMem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_button"
+        android:text="Kỹ Năng Mềm"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnKiNangSong"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnKhoiNghiep"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Khởi Nghiệp"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_button"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnKinhDoanh"
+        app:layout_constraintTop_toBottomOf="@+id/btnKiNangMem" />
+
+    <Button
+        android:id="@+id/btnKinhDoanh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Kinh Doanh"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/bg_button"
+        app:layout_constraintEnd_toStartOf="@+id/btnKhoiNghiep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKiNangSong" />
+
+    <Button
+        android:id="@+id/btnKiNangHoc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Kỹ Năng Học"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/bg_button"
+        app:layout_constraintEnd_toStartOf="@+id/btnCuocSong"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKinhDoanh" />
+
+    <Button
+        android:id="@+id/btnCuocSong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Cuộc Sống"
+        android:background="@drawable/bg_button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnKiNangHoc"
+        app:layout_constraintTop_toBottomOf="@+id/btnKhoiNghiep" />
+
+    <Button
+        android:id="@+id/btnTanMan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Tản Mạn"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/bg_button"
+        app:layout_constraintEnd_toStartOf="@+id/btnTinhTam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKiNangHoc" />
+
+    <Button
+        android:id="@+id/btnTinhYeu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Tình Yêu"
+        android:background="@drawable/bg_button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@+id/btnTinhBan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTanMan" />
+
+    <Button
+        android:id="@+id/btnCongNghe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:text="Công Nghệ"
+        app:layout_constraintEnd_toStartOf="@+id/btnAmThuc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGiaDinh" />
+
+    <Button
+        android:id="@+id/btnNuoiDayCon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Nuôi Dạy Con"
+        android:background="@drawable/bg_button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGiaDinh"
+        app:layout_constraintTop_toBottomOf="@+id/btnTinhBan" />
+
+    <Button
+        android:id="@+id/btnSucKhoe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:text="Sức Khỏe"
+        app:layout_constraintEnd_toStartOf="@+id/btnThuocNam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCongNghe" />
+
+    <Button
+        android:id="@+id/btnThuocNam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:text="Thuốc Nam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSucKhoe"
+        app:layout_constraintTop_toBottomOf="@+id/btnAmThuc" />
+
+    <Button
+        android:id="@+id/btnSinhTon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Sinh Tồn"
+        android:background="@drawable/bg_button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMeoVat"
+        app:layout_constraintTop_toBottomOf="@+id/btnThuocNam" />
+
+    <Button
+        android:id="@+id/btnNguNgon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Ngụ Ngôn"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/bg_button"
+        app:layout_constraintEnd_toStartOf="@+id/btnTruyenCuoi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMeoVat" />
+
+    <Button
+        android:id="@+id/btnGiaDinh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Gia Đình"
+        android:background="@drawable/bg_button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@+id/btnNuoiDayCon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTinhYeu" />
+
+    <Button
+        android:id="@+id/btnAmThuc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_button"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:text="Ẩm Thực"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCongNghe"
+        app:layout_constraintTop_toBottomOf="@+id/btnNuoiDayCon" />
+</androidx.constraintlayout.widget.ConstraintLayout>
